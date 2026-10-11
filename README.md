@@ -14,7 +14,7 @@ Este repositorio reúne los mini proyectos y prácticas que iré realizando en e
 | Materia | Descripción | Prácticas actuales |
 |---|---|---|
 | [Programación Web](./programacion-web/README.md) | Ejercicios de desarrollo web con HTML y CSS, desde páginas de contenido hasta un portafolio personal responsive. | [Práctica 1](./programacion-web/practica-1/), [Práctica 2](./programacion-web/practica-2/) |
-| [Minería de Datos](./mineria-de-datos/README.md) | Prácticas de exploración y visualización de datos con Python. | [Práctica 1: análisis de aguacates](./mineria-de-datos/practica-1/) |
+| [Minería de Datos](./mineria-de-datos/README.md) | Prácticas de exploración y visualización de datos con Python. | [Práctica 1: análisis de aguacates](./mineria-de-datos/practica-1/), [Práctica 2: catálogo de Netflix](./mineria-de-datos/practica-2/) |
 
 ---
 
@@ -30,6 +30,7 @@ Consulta el [README de Programación Web](./programacion-web/README.md) para ver
 ### Minería de Datos
 
 - **Práctica 1 — Análisis de aguacates:** aplicación de escritorio en Python que lee un CSV, resume dimensiones y precios, muestra registros en tablas y grafica el precio promedio por año y región.
+- **Práctica 2 — Análisis del catálogo de Netflix:** aplicación de escritorio en Python que explora los datos del catálogo, presenta estadísticos y compara la cantidad de películas y series por año de lanzamiento.
 
 Consulta el [README de Minería de Datos](./mineria-de-datos/README.md) para ver dependencias e instrucciones de ejecución.
 
@@ -46,7 +47,8 @@ proyectos-itla/
 │   └── practica-2/
 └── mineria-de-datos/
     ├── README.md
-    └── practica-1/
+    ├── practica-1/
+    └── practica-2/
 ```
 
 Conforme avance el cuatrimestre, agregaré nuevas materias y prácticas manteniendo esta organización. Las instrucciones específicas para ejecutar o consultar cada trabajo estarán en el README de su materia.
