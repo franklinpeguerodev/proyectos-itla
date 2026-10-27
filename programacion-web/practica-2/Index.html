@@ -21,6 +21,10 @@
                     <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
         </nav>
+        <div class="controles">
+            <button id="btn-modo" class="btn" type="button">Modo oscuro</button>
+            <button id="btn-like" class="btn" type="button">&#10084; <span id="contador-likes">0</span> gusta</button>
+        </div>
     </header>
 
     <main>
@@ -28,11 +32,12 @@
             <article>
                 <h2>Franklin J.R Peguero Perez</h2>
                 <img src="Resources/Img/Foto-perfil-yo.png" alt="Foto de Franklin Junior Peguero Perez">
-                <p>Naci el 01 de abril del 2006 (20 años) en San Jose de Ocoa, R.D. Desde la adolescencia he sentido
+                <p id="texto-sobre-mi">Naci el 01 de abril del 2006 (20 años) en San Jose de Ocoa, R.D. Desde la adolescencia he sentido
                  un profundo interes por la programacion y, mas que programacion, es el hecho de tener una idea,
                  planearla y desarrollarla; para mi es uno de los sentimientos mas hermosos que pueden existir.
                  El hecho de crear cosas es lo que me ha traido hasta aqui.
                 </p>
+                <button id="btn-leer-mas" class="btn" type="button">Leer más</button>
                 <a class="btn" href="Resources/document/CV_Franklin_Junior_Peguero_Perez.pdf" download>Descargar CV</a>
             </article>
         </section>
@@ -113,5 +118,8 @@
  </footer>
 
     <a href="#inicio" class="back-to-top" title="Volver al principio">&#8593;</a>
+    <script src="Scripts/modoOscuro.js"></script>
+    <script src="Scripts/BtnLike.js"></script>
+    <script src="Scripts/Ocultar.js"></script>
 </body>
 </html>

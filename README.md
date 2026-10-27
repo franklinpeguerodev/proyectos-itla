@@ -13,7 +13,7 @@ Este repositorio reúne los mini proyectos y prácticas que iré realizando en e
 
 | Materia | Descripción | Prácticas actuales |
 |---|---|---|
-| [Programación Web](./programacion-web/README.md) | Ejercicios de desarrollo web con HTML y CSS, desde páginas de contenido hasta un portafolio personal responsive. | [Práctica 1](./programacion-web/practica-1/), [Práctica 2](./programacion-web/practica-2/) |
+| [Programación Web](./programacion-web/README.md) | Ejercicios de desarrollo web con HTML, CSS y JavaScript, desde páginas de contenido hasta un portafolio personal responsive e interactivo. | [Práctica 1](./programacion-web/practica-1/), [Práctica 2](./programacion-web/practica-2/), [Práctica 3](./programacion-web/practica-2/) |
 | [Minería de Datos](./mineria-de-datos/README.md) | Prácticas de exploración y visualización de datos con Python. | [Práctica 1: análisis de aguacates](./mineria-de-datos/practica-1/), [Práctica 2: catálogo de Netflix](./mineria-de-datos/practica-2/) |
 
 ---
@@ -24,6 +24,7 @@ Este repositorio reúne los mini proyectos y prácticas que iré realizando en e
 
 - **Práctica 1 — Blog de *The Walking Dead*:** página de reseña con estructura HTML semántica, navegación por secciones y estilos CSS con tema oscuro.
 - **Práctica 2 — Portafolio personal:** página responsive con datos personales, habilidades técnicas y una galería de proyectos; usa CSS Grid y recursos gráficos propios.
+- **Práctica 3 — Interactividad con JavaScript:** expansión de la Práctica 2 con JavaScript puro; agrega modo oscuro, contador de *likes* y biografía expandible ("leer más / leer menos").
 
 Consulta el [README de Programación Web](./programacion-web/README.md) para ver detalles, estructura y cómo abrir cada práctica.
 

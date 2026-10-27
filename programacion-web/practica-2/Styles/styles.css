@@ -304,3 +304,31 @@ footer {
         font-size: 1.4rem;
     }
 }
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+body.modo-oscuro {
+    --color-fondo: #1e272e;
+    --color-texto: #f5f6fa;
+    --color-texto-suave: #b2bec3;
+    --color-chip: #3d4852;
+    --sombra-suave: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+body.modo-oscuro #datos-personales article,
+body.modo-oscuro .tarjeta_proyecto,
+body.modo-oscuro .habilidad-chip {
+    background: #2d3436;
+}
+
+body.modo-oscuro .habilidad-chip:hover {
+    background: var(--color-primario);
+}
+

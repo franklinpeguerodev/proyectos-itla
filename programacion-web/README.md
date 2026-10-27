@@ -1,6 +1,6 @@
 # Programación Web — Prácticas
 
-Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que van creciendo conforme avanza el cuatrimestre. Cada carpeta corresponde a una práctica y contiene una página web completa en **HTML + CSS** (sin frameworks, sin build).
+Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que van creciendo conforme avanza el cuatrimestre. Cada carpeta corresponde a una práctica y contiene una página web completa en **HTML, CSS y JavaScript** (sin frameworks, sin build).
 
 | | |
 |---|---|
@@ -14,8 +14,9 @@ Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que 
 
 | Práctica | Tema | Contenido | Nivel |
 |---|---|---|---|
-| [Practica #1](./Practica%20%231/) | Blog / reseña de *The Walking Dead* | HTML semántico + CSS con variables (tema oscuro) | Básico |
-| [Practica # 2](./Practica%20%23%202/) | Portafolio personal | HTML semántico + CSS intermedio (grid responsive, gradientes, tipografía externa) | Intermedio |
+| [Practica #1](./practica-1/) | Blog / reseña de *The Walking Dead* | HTML semántico + CSS con variables (tema oscuro) | Básico |
+| [Practica # 2](./practica-2/) | Portafolio personal | HTML semántico + CSS intermedio (grid responsive, gradientes, tipografía externa) | Intermedio |
+| [Practica #3](./practica-2/) | Interactividad con JavaScript (expansión de la Práctica 2) | JavaScript puro: modo oscuro, contador de *likes* y "leer más" | Intermedio |
 
 ---
 
@@ -23,6 +24,7 @@ Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que 
 
 - **Práctica #1** sienta la base: estructura semántica del documento, navegación por anclas internas, reset de estilos, variables CSS y un layout de una sola columna con tema oscuro.
 - **Práctica #2** da el salto: fuentes externas (Google Fonts), CSS Grid con `auto-fit` para una galería de tarjetas, gradientes, `aspect-ratio`, sombras, `hover` effects, media query para móvil y `scroll-behavior: smooth`.
+- **Práctica #3** expande la Práctica #2 con JavaScript puro: modo oscuro, contador de *likes* y biografía expandible, manipulando el DOM sin librerías ni build.
 
 ---
 
@@ -119,9 +121,60 @@ Doble clic en `Index.html` (o ábrelo con click derecho → Abrir con → navega
 
 ---
 
+## Practica #3 — Interactividad con JavaScript
+
+**Objetivo:** ampliar el portafolio de la Práctica #2 con JavaScript puro para volver la página más interactiva, manipulando el DOM sin librerías, frameworks ni herramientas de build.
+
+> Esta práctica se desarrolló sobre la misma carpeta de la Práctica #2 (`practica-2/`), reutilizando su HTML y CSS y agregando la carpeta `Scripts/`.
+
+### Funcionalidades agregadas
+
+- **Modo oscuro / claro:** botón en el header que alterna el tema y actualiza su propio texto.
+- **Contador de "me gusta":** botón con un contador que aumenta en cada clic.
+- **Biografía expandible:** botón **"Leer más / Leer menos"** que muestra el texto completo o truncado.
+
+### Estructura de archivos
+
+```
+Practica # 2/
+├── Index.html
+├── Scripts/
+│   ├── BtnLike.js
+│   ├── modoOscuro.js
+│   └── Ocultar.js
+├── Styles/
+│   └── styles.css
+└── Resources/
+    ├── Img/
+    │   ├── Foto-perfil-yo.png
+    │   ├── Pirry-Manager.JPG
+    │   ├── Donaway.JPG
+    │   ├── FlowTrack.JPG
+    │   └── StackFlow.JPG
+    └── document/
+        └── CV_Franklin_Junior_Peguero_Perez.pdf
+```
+
+### Técnicas utilizadas
+
+- **JavaScript básico** (sin librerías):
+  - `BtnLike.js`: contador de *likes* con una variable de estado y `addEventListener("click")`.
+  - `modoOscuro.js`: alterna la clase `modo-oscuro` en `document.body` con `classList.toggle` y actualiza el texto del botón.
+  - `Ocultar.js`: trunca la biografía con `substring` y alterna entre "Leer más" y "Leer menos".
+  - Selección de elementos con `getElementById` y actualización del DOM con `textContent`.
+- **CSS para el modo oscuro:** variables redefinidas en `body.modo-oscuro` y fondos ajustados para tarjetas y chips.
+- **Controles en el header:** botones agrupados con Flexbox (`.controles`).
+- Carga de los scripts al final del `body` para que el DOM exista antes de ejecutarlos.
+
+### Cómo abrirlo
+
+Doble clic en `Index.html` (o ábrelo con click derecho → Abrir con → navegador). Los scripts se cargan al final del `body`, así que la interactividad funciona directamente sin servidor local.
+
+---
+
 ## Cómo ejecutar los proyectos
 
-No hay dependencias ni herramientas de build. Ambas prácticas son HTML + CSS puros:
+No hay dependencias ni herramientas de build. Las prácticas son HTML + CSS + JavaScript puros:
 
 1. Clona el repositorio:
    ```bash
@@ -133,8 +186,9 @@ No hay dependencias ni herramientas de build. Ambas prácticas son HTML + CSS pu
 
 ## Convenciones del repositorio
 
-- Cada práctica vive en su propia carpeta: `Practica #N`.
+- Cada práctica vive en su propia carpeta: `practica-N`.
 - Siempre existe un `Index.html` como punto de entrada.
 - Los estilos van en una carpeta (`Style/` o `Styles/`) con un solo archivo CSS.
+- Los scripts, cuando la práctica los necesita, van en `Scripts/` (un archivo por funcionalidad).
 - Los recursos (imágenes, documentos) van en `Resources/`.
 - Commits breves en minúscula describiendo la práctica.
