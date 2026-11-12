@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de la Compra - Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <h1>&#128722; Lista de la Compra</h1>
+            <p class="subtitulo">Supermercado</p>
+        </header>
+
+        <section class="seccion-agregar">
+            <input
+                type="text"
+                id="inputProducto"
+                class="input-producto"
+                placeholder="Escribe un producto..."
+                autocomplete="off"
+            >
+            <button id="btnAgregar" class="btn btn-agregar" type="button">Agregar</button>
+        </section>
+
+        <p id="mensaje" class="mensaje" aria-live="polite"></p>
+        <section class="controles">
+            <button id="btnOrdenar" class="btn btn-ordenar" type="button">Ordenar A-Z</button>
+            <button id="btnMoverCompletados" class="btn btn-secundario" type="button">Mover completados al final</button>
+            <span id="contador" class="contador"></span>
+        </section>
+
+        <ul id="listaProductos" class="lista-productos"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
