@@ -1,6 +1,6 @@
 # Minería de Datos — Prácticas
 
-Repositorio de prácticas de la materia **Minería de Datos** del **ITLA**, organizadas por número y tema. La primera práctica trabaja con un conjunto de datos de aguacates y presenta sus estadísticas y visualizaciones en una aplicación de escritorio hecha con Python.
+Repositorio de prácticas de la materia **Minería de Datos** del **ITLA**, organizadas por número y tema. Las prácticas trabajan con conjuntos de datos reales y presentan sus estadísticas y visualizaciones en aplicaciones de escritorio hechas con Python.
 
 | | |
 |---|---|
@@ -32,12 +32,13 @@ Repositorio de prácticas de la materia **Minería de Datos** del **ITLA**, orga
 
 ### Estructura de archivos
 
-```
+```text
 practica-1/
 ├── .gitignore
 ├── avocado.csv
 ├── avocado_analysis.py
-└── pyproject.toml
+├── pyproject.toml
+└── scatter_avocado.png
 ```
 
 Al ejecutar la aplicación, Matplotlib genera `scatter_avocado.png` en esta misma carpeta. El archivo que ya está en el repositorio se conserva; las nuevas generaciones quedan ignoradas por el `.gitignore` de la práctica.
@@ -75,13 +76,22 @@ El archivo `avocado.csv` debe permanecer junto al script; la aplicación lo carg
 - Gráfico de barras agrupadas para películas y series entre 2010 y 2021, inclusive.
 - Interfaz de escritorio construida con PyQt5 e integrada con Matplotlib.
 
-### Estructura
+### Estructura de archivos
 
-```
+```text
 practica-2/
-├── netflix_titles.csv
-└── netflix_analysis.py
+├── .gitignore
+├── netflix_analysis.py
+└── netflix_titles.csv
 ```
+
+### Tecnologías utilizadas
+
+- Python.
+- Pandas para leer, limpiar y consultar el archivo CSV.
+- Matplotlib para crear el gráfico de barras.
+- PyQt5 para la interfaz gráfica de escritorio.
+- `.gitignore` excluye archivos generados, entornos virtuales y cachés locales.
 
 ### Cómo ejecutar la práctica
 
@@ -100,4 +110,6 @@ El CSV debe permanecer junto al script. El gráfico se basa en `release_year`; s
 
 - Cada práctica vive en su propia carpeta: `practica-N`.
 - Los datos fuente necesarios para ejecutar cada práctica se guardan junto al código.
+- Cada práctica incluye su propio `.gitignore` cuando genera archivos locales.
 - Los archivos generados, entornos virtuales y cachés locales no se incluyen en Git.
+- Las dependencias se instalan con `pip` y se documentan en el README de la práctica correspondiente.
