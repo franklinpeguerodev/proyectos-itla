@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorador de personajes de Rick and Morty usando HTML, CSS y JavaScript puro.">
+    <title>Explorador de personajes | Rick and Morty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <p class="cabecera__etiqueta">Rick and Morty API</p>
+            <h1 class="cabecera__titulo">Explorador de personajes</h1>
+            <p class="cabecera__descripcion">
+                Busca personajes por nombre y recorre todas las páginas de resultados.
+            </p>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <form id="formBusqueda" class="buscador" role="search">
+            <label class="sr-only" for="inputBusqueda">Nombre del personaje</label>
+            <input
+                id="inputBusqueda"
+                class="buscador__input"
+                type="search"
+                name="name"
+                placeholder="Ej. Rick, Morty, Summer..."
+                autocomplete="off"
+                spellcheck="false"
+            >
+            <button id="btnBuscar" class="boton buscador__boton" type="submit">Buscar</button>
+        </form>
+
+        <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+        <section id="personajes" class="grid-personajes" aria-label="Lista de personajes"></section>
+
+        <nav id="paginacion" class="paginacion" aria-label="Paginación de resultados" hidden>
+            <button id="btnAnterior" class="boton boton--secundario" type="button">Anterior</button>
+            <span id="indicadorPagina" class="paginacion__indicador">Página 1</span>
+            <button id="btnSiguiente" class="boton boton--secundario" type="button">Siguiente</button>
+        </nav>
+
+        <noscript>
+            <p class="mensaje mensaje--error">Necesitas activar JavaScript para usar el explorador.</p>
+        </noscript>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>
+                Datos obtenidos de la API pública de
+                <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">Rick and Morty</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
