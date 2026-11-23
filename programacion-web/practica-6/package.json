@@ -1,0 +1,13 @@
+{
+  "name": "practica-6-api-productos",
+  "version": "1.0.0",
+  "description": "Práctica 6 - API REST de productos con Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
