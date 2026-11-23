@@ -1,6 +1,6 @@
 # Programación Web — Prácticas
 
-Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que van creciendo conforme avanza el cuatrimestre. Cada carpeta corresponde a una práctica y contiene una página web completa en **HTML, CSS y JavaScript** (sin frameworks, sin build).
+Prácticas de la materia **Programación Web** del **ITLA**. Cada carpeta corresponde a una práctica. Las primeras cuatro usan **HTML, CSS y JavaScript**. La Práctica 6 usa **Node.js y Express** para crear una API REST.
 
 | | |
 |---|---|
@@ -18,6 +18,7 @@ Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que 
 | [Práctica 2](./practica-2/) | Portafolio personal | HTML semántico + CSS intermedio (grid responsive, gradientes, tipografía externa) | Intermedio |
 | [Práctica 3](./practica-3/) | Lista de la compra e interactividad del portafolio | JavaScript puro: CRUD en el DOM, orden, contador, modo oscuro y *likes* | Intermedio |
 | [Práctica 4](./practica-4/) | Explorador de personajes | `fetch`, `async/await`, búsqueda, paginación y renderizado dinámico con la API de Rick and Morty | Intermedio |
+| [Práctica 6](./practica-6/) | API REST de productos | Node.js, Express, CRUD en memoria y respuestas HTTP en JSON | Intermedio |
 
 ---
 
@@ -27,6 +28,7 @@ Repositorio de prácticas de la materia **Programación Web** del **ITLA**, que 
 - **Práctica 2** da el salto: fuentes externas (Google Fonts), CSS Grid con `auto-fit` para una galería de tarjetas, gradientes, `aspect-ratio`, sombras, efectos `hover`, media query para móvil y `scroll-behavior: smooth`.
 - **Práctica 3** incorpora JavaScript puro en dos partes: la interactividad del portafolio (modo oscuro, contador de *likes* y biografía expandible) y una lista de la compra completa con operaciones sobre el DOM.
 - **Práctica 4** consume una API REST pública con `fetch` y `async/await`, y agrega búsqueda, paginación, estados de carga y manejo de errores.
+- **Práctica 6** implementa una API REST con Express que valida los campos obligatorios y usa códigos HTTP para comunicar el resultado de cada operación.
 
 ---
 
@@ -252,9 +254,17 @@ http://localhost:8000/programacion-web/practica-4/
 
 ---
 
+## Práctica 6 — API REST de productos
+
+La API arranca con seis productos en memoria. `GET` permite listarlos y consultarlos por ID. `POST`, `PUT` y `DELETE` permiten crear, actualizar y eliminar productos. Los cambios duran hasta que se reinicia el servidor.
+
+Consulta el [README de la Práctica 6](./practica-6/README.md) para ver los comandos y las rutas.
+
+---
+
 ## Cómo ejecutar los proyectos
 
-No hay dependencias ni herramientas de build. Las prácticas son HTML + CSS + JavaScript puros:
+Las prácticas 1 a 4 usan HTML, CSS y JavaScript y se pueden abrir en el navegador.
 
 1. Clona el repositorio:
    ```bash
@@ -268,6 +278,8 @@ No hay dependencias ni herramientas de build. Las prácticas son HTML + CSS + Ja
 
 Para la Práctica 4 se recomienda usar un servidor local si el navegador restringe las peticiones desde `file://`.
 
+Para la Práctica 6, entra en `programacion-web/practica-6`, instala las dependencias con `npm ci` y ejecuta `npm run dev`.
+
 ---
 
 ## Convenciones del repositorio
@@ -277,5 +289,5 @@ Para la Práctica 4 se recomienda usar un servidor local si el navegador restrin
 - Los estilos van en un solo archivo CSS, dentro de `Style/`, `Styles/` o en la raíz de la práctica según corresponda.
 - Los scripts van en `Scripts/` cuando la práctica tiene varias funcionalidades y en `script.js` cuando es un solo archivo.
 - Los recursos (imágenes, documentos) van en `Resources/`.
-- Las prácticas nuevas usan nombres de archivo en minúscula, nombres descriptivos en español y código sin comentarios.
+- Las prácticas nuevas usan nombres de archivo en minúscula y nombres descriptivos en español.
 - Commits breves en minúscula describiendo la práctica.

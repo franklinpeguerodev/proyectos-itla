@@ -13,7 +13,7 @@ Este repositorio reúne los mini proyectos y prácticas que iré realizando en e
 
 | Materia | Descripción | Prácticas actuales |
 |---|---|---|
-| [Programación Web](./programacion-web/README.md) | Ejercicios de desarrollo web con HTML, CSS y JavaScript puro, desde páginas de contenido y un portafolio responsive hasta aplicaciones interactivas que consumen una API. | [Práctica 1](./programacion-web/practica-1/), [Práctica 2](./programacion-web/practica-2/), [Práctica 3](./programacion-web/practica-3/), [Práctica 4](./programacion-web/practica-4/) |
+| [Programación Web](./programacion-web/README.md) | Ejercicios de desarrollo web con HTML, CSS y JavaScript, incluido el consumo de APIs y la creación de una API con Node.js y Express. | [Práctica 1](./programacion-web/practica-1/), [Práctica 2](./programacion-web/practica-2/), [Práctica 3](./programacion-web/practica-3/), [Práctica 4](./programacion-web/practica-4/), [Práctica 6](./programacion-web/practica-6/) |
 | [Minería de Datos](./mineria-de-datos/README.md) | Prácticas de exploración y visualización de datos con Python. | [Práctica 1: análisis de aguacates](./mineria-de-datos/practica-1/), [Práctica 2: catálogo de Netflix](./mineria-de-datos/practica-2/) |
 
 ---
@@ -26,6 +26,7 @@ Este repositorio reúne los mini proyectos y prácticas que iré realizando en e
 - **Práctica 2 — Portafolio personal:** página responsive con datos personales, habilidades técnicas y una galería de proyectos; usa CSS Grid y recursos gráficos propios. Incluye los scripts de interactividad agregados en la Práctica 3.
 - **Práctica 3 — Lista de la compra:** aplicación de supermercado con JavaScript puro para agregar, completar, eliminar y ordenar productos, con contador y mensajes de validación.
 - **Práctica 4 — Explorador de personajes:** página que consume la API pública de Rick and Morty con `fetch`, búsqueda por nombre, paginación y tarjetas generadas dinámicamente.
+- **Práctica 6 — API REST de productos.** API con Node.js y Express para consultar, crear, actualizar y eliminar productos de un catálogo en memoria.
 
 Consulta el [README de Programación Web](./programacion-web/README.md) para ver detalles, estructura y cómo abrir cada práctica.
 
@@ -48,7 +49,8 @@ proyectos-itla/
 │   ├── practica-1/
 │   ├── practica-2/
 │   ├── practica-3/
-│   └── practica-4/
+│   ├── practica-4/
+│   └── practica-6/
 └── mineria-de-datos/
     ├── README.md
     ├── practica-1/
